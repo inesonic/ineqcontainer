@@ -52,6 +52,10 @@ HEADERS = $$API_HEADERS
 # Libraries
 #
 
+defined(SETTINGS_PRI, var) {
+    include($${SETTINGS_PRI})
+}
+
 INCLUDEPATH += $${INECONTAINER_INCLUDE}
 
 unix {

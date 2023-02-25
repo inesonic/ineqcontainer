@@ -35,6 +35,10 @@ SOURCES = test_ineqcontainer.cpp \
 # Libraries
 #
 
+defined(SETTINGS_PRI, var) {
+    include($${SETTINGS_PRI})
+}
+
 INEQCONTAINER_BASE = $${OUT_PWD}/../ineqcontainer
 
 INCLUDEPATH += $${PWD}/../ineqcontainer/include
